@@ -1,11 +1,11 @@
-import logo from "../assets/img/dc-logo.png";
+
 
 const MyHeader = () => {
     return (
         <header>
             <div className="container">
                 <figure>
-                    <img src={logo} alt="logo-dc" />
+                    <img src="/img/dc-logo.png" alt= "logo-dc" />
                 </figure>
                 <nav className="navbar">
                     <div className="linkbox">

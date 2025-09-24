@@ -1,3 +1,5 @@
+
+
 /* css reset */
 
 body {
@@ -5,15 +7,9 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: rgb(13, 13, 13);
-    max-width: 100vw;
-    max-height: 100vh;
 }
 
 
-.app-container {
-    margin-top: 8vh;
-    margin-bottom: 8vh;
-}
 
 /* Header */
 header {
@@ -22,15 +18,15 @@ header {
 }
 
 .container {
-    padding: 0 100px;
-    height: 100px;
+    height: 13vh;
+    padding: 0 180px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.container img{
-    height: 70px;
+.container img {
+    height: 55px;
 }
 
 .navbar {
@@ -45,36 +41,81 @@ header {
     height: 100px;
 }
 
-li{
-    display:flex;
+li {
+    display: flex;
     align-items: center;
 }
 
-.linkbox li:hover{
-    height: 100px;
+.linkbox li:hover {
+    height: 75px;
     align-items: center;
     border-bottom: solid 5px rgb(2, 130, 250);
 
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
     font-weight: 500;
+    font-size:x-small;
 }
 
-.box{
-    display: flex;
-    align-items: center;
-    background-color: rgb(28, 28, 28);
-    height: 15vh;
-}
 
-h2{
-    font-size: 30px ;
+/* MAIN */
+
+
+h2 {
+    font-size: 20px;
     color: white;
     font-weight: 700;
 }
 
+.card-container {
+    padding: 0 150px;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(2, 130, 250);
+}
 
+.card{
+    display:flex;
+    align-items: center;
+    color:white;
+}
 
+.card img{
+    height: 35px;
+}
+
+figure{
+    display: flex;
+    font-size: 8px;
+    gap:10px;
+    align-items: center;
+}
+
+footer{
+    background-image: url("/img/footer-bg.jpg");
+    color: grey;
+    height:49vh
+}
+
+.link-container{
+    padding: 10px 200px;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+}
+
+.big{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.link-container h4{
+    font-weight: 700;
+    color:white
+}

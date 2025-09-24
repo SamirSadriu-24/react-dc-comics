@@ -1,15 +1,16 @@
 
 import './App.css'
 import MyHeader from './componenti/myHeader'
-import MyBody from "./componenti/MyBody"
+import MyMain from "./componenti/MyMain"
+import MyFooter from "./componenti/MyFooter"
 
 function App() {
 
   return (
     <div className="app-container">
         <MyHeader />
-        <MyBody />
-
+        <MyMain />
+        <MyFooter />
     </div>
   )
 }
