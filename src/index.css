@@ -1,5 +1,3 @@
-
-
 /* css reset */
 
 body {
@@ -7,6 +5,10 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: rgb(13, 13, 13);
+    font-family: "Open Sans", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -15,6 +17,7 @@ body {
 header {
     background-color: white;
     width: 0 auto;
+    flex-shrink: 0;
 }
 
 .container {
@@ -57,7 +60,7 @@ a {
     text-decoration: none;
     color: black;
     font-weight: 500;
-    font-size:x-small;
+    font-size: x-small;
 }
 
 
@@ -71,51 +74,108 @@ h2 {
 }
 
 .card-container {
+    z-index:2;
     padding: 0 150px;
     height: 15vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(2, 130, 250);
+    flex-shrink: 0;
 }
 
-.card{
-    display:flex;
+.card {
+    display: flex;
     align-items: center;
-    color:white;
+    color: white;
 }
 
-.card img{
+.card img {
     height: 35px;
 }
 
-figure{
+figure {
     display: flex;
     font-size: 8px;
-    gap:10px;
+    gap: 10px;
     align-items: center;
 }
 
-footer{
+
+/* FOOTER */
+footer {
     background-image: url("/img/footer-bg.jpg");
-    color: grey;
-    height:49vh
+    height: 45vh;
+    flex-grow: 1;
+    background-size: cover;
 }
 
-.link-container{
-    padding: 10px 200px;
+
+.link-container {
+    padding: 0px 200px;
     display: flex;
     flex-direction: row;
-    font-size: 12px;
+    font-size: 10px;
+    height: 43vh;
+    flex-grow: 1;
 }
 
-.big{
+.big {
     display: flex;
     flex-direction: column;
-    font-size: 12px;
+    font-size: 10px;
 }
 
-.link-container h4{
+.link-container h4 {
     font-weight: 700;
-    color:white
+    color: white;
+    font-size:12px;
+}
+
+.link-container ul li a{
+    color: grey;
+}
+
+#logo-grande{
+    height: 400px;
+    z-index: 0;
+    position: absolute;
+    bottom: 5%;
+    left: 60%;
+    z-index: 0;
+}
+
+.footer-container{
+    display: flex;
+}
+
+.social .container{
+    position:relative;
+    background-color: rgb(34, 32, 32);
+    z-index:2;
+    height: 15vh;
+}
+
+.social-link ul{
+    z-index:2;
+    color: white;
+    display:flex;
+    gap:10px;
+
+}
+
+.social-link ul h4{
+    color:rgb(2, 130, 250);
+}
+
+.social-link ul img{
+    height: 30px;
+}
+
+button{
+    background-color:transparent;
+    color:white;
+    padding: 10px;
+    border-color:rgb(2, 130, 250);
+
 }
