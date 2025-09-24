@@ -1,0 +1,80 @@
+/* css reset */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(13, 13, 13);
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+
+.app-container {
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+}
+
+/* Header */
+header {
+    background-color: white;
+    width: 0 auto;
+}
+
+.container {
+    padding: 0 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container img{
+    height: 70px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.linkbox ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style-type: none;
+    height: 100px;
+}
+
+li{
+    display:flex;
+    align-items: center;
+}
+
+.linkbox li:hover{
+    height: 100px;
+    align-items: center;
+    border-bottom: solid 5px rgb(2, 130, 250);
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    background-color: rgb(28, 28, 28);
+    height: 15vh;
+}
+
+h2{
+    font-size: 30px ;
+    color: white;
+    font-weight: 700;
+}
+
+
+

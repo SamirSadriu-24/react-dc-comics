@@ -1,12 +1,16 @@
 
 import './App.css'
+import MyHeader from './componenti/myHeader'
+import MyBody from "./componenti/MyBody"
 
 function App() {
 
   return (
-    <>
-      <h1>sono la tua app</h1>
-    </>
+    <div className="app-container">
+        <MyHeader />
+        <MyBody />
+
+    </div>
   )
 }
 
