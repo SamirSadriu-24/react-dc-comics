@@ -15,41 +15,7 @@ const MyMain = () => {
             <MyJumbo />
             <ComicSection />
             <MyBlueBanner />
-            {/* container immagini e scritte bianche */}
-            {/* <div className="card-container">
-                <div className="card">
-                    <figure>
-                        <img src={digitalComicsImg} alt="dc-digital-comics-logo" />
-                    <figcaption>DIGITAL COMICS</figcaption>
-                    </figure>
-                </div>
-
-                <div className="card">
-                    <figure>
-                        <img src={comicsMerchandise} alt="dc-comics-merchandise" />
-                    <figcaption>DC MERCHANDISE</figcaption>
-                    </figure>
-                </div>
-
-                <div className="card">
-                    <figure>
-                        <img src={comicsSubs} alt="dc-subscription" />
-                    <figcaption>SUBSCRIPTIONS</figcaption>
-                    </figure>
-                </div>
-                <div className="card">
-                    <figure>
-                        <img src={comicShopLocator} alt="dc-comic-shop-locator" />
-                    <figcaption>COMIC SHOP LOCATOR</figcaption>
-                    </figure>
-                </div>
-                <div className="card">
-                    <figure>
-                        <img src={powerVisa} alt="dc-power-visa"/>
-                    <figcaption>DC POWER VISA</figcaption>
-                    </figure>
-                </div>
-            </div> */}
+            
         </div>
     )
 
