@@ -210,7 +210,7 @@ figure {
 /* FOOTER */
 footer {
     background-image: url("/img/footer-bg.jpg");
-    height: 45vh;
+    height: 50vh;
     flex-grow: 1;
     background-size: cover;
     z-index: 2;
@@ -226,7 +226,7 @@ footer {
     display: flex;
     flex-direction: row;
     font-size: 10px;
-    height: 260px;
+    height: 297px;
     flex-grow: 1;
 }
 
