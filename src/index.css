@@ -60,7 +60,7 @@ a {
     text-decoration: none;
     color: black;
     font-weight: 500;
-    font-size: x-small;
+    font-size: small;
 }
 
 
@@ -69,7 +69,7 @@ a {
 .jumbotron {
     position: relative;
     width: 100%;
-    height: 40vh;
+    height: 60vh;
     top: 0px;
     display: flex;
     align-items: center;
@@ -79,7 +79,7 @@ a {
 }
 
 .jumbotron-img {
-    top:-40px;
+    top: -40px;
     position: absolute;
     object-position: center;
     width: 100%;
@@ -103,6 +103,8 @@ a {
     display: flex;
     align-items: center;
     color: white;
+    padding: 10px;
+    gap: 10px;
 }
 
 .card img {
@@ -116,6 +118,94 @@ figure {
     align-items: center;
 }
 
+.container-comics {
+    display: flex;
+    z-index: 3;
+    background-color: rgb(28, 28, 28);
+}
+
+.comic-list {
+    transform: translateY(-50px);
+    z-index: 3;
+    background-color: rgb(28, 28, 28);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    align-items: start;
+    width: 100%;
+    padding: 0px 150px;
+}
+
+.comic-card {
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.comic-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.comic-card p {
+    background-color: rgb(28, 28, 28);
+    color: white;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.comic-section{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.container-button{
+    padding: 0 150px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(28, 28, 28);
+    z-index: 3;
+}
+.load{
+    margin-bottom: 20px;
+    align-self: center;
+    background-color: rgb(2, 130, 250);
+    font-weight: 700;
+}
+
+/* #etichetta{
+    position:absolute;
+    top: -20px;
+    font-size:20px;
+    font-weight: 700;
+    translate: -30% -85%;
+    display:flex;
+    z-index:4;
+    color:white;
+    background-color: rgb(2, 130, 250);
+    } */
+    
+    .current{
+        background-color: rgb(28, 28, 28);
+
+    }
+    .container #etichetta {
+        position: absolute;
+        top: 200;
+        translate: -13% -90%;                
+        z-index: 10;               
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        font-weight: bold;
+    }
+    
+
 
 /* FOOTER */
 footer {
@@ -124,7 +214,7 @@ footer {
     flex-grow: 1;
     background-size: cover;
     z-index: 2;
-    display:flex;
+    display: flex;
     flex-direction: column;
     position: relative;
 }
@@ -157,11 +247,11 @@ footer {
 }
 
 #logo-grande {
-    position: absolute; 
-    bottom: -20px;        
-    left: 50%;            
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
     height: 400px;
-    z-index: -1;          
+    z-index: -1;
 }
 
 

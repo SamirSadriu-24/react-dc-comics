@@ -38,10 +38,14 @@ const blueBanner = [
 const MyBlueBanner = () => {
     return (
         <div className="card-container">
-            <div className="card">
-                {blueBanner}
-
-            </div>
+            {blueBanner.map((card, index) => (
+                <div className="card" key={index}>
+                <img src={card.img} alt={card.alt} />
+                <p>{card.text}</p>
+                </div>
+            ))}
         </div>
-    )
-}
+    );
+};
+
+export default MyBlueBanner
