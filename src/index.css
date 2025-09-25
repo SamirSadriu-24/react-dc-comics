@@ -41,7 +41,7 @@ header {
     align-items: center;
     gap: 10px;
     list-style-type: none;
-    height: 100px;
+    height: 105px;
 }
 
 li {
@@ -92,7 +92,7 @@ h2 {
 }
 
 .card img {
-    height: 35px;
+    height: 36px;
 }
 
 figure {
@@ -117,7 +117,7 @@ footer {
     display: flex;
     flex-direction: row;
     font-size: 10px;
-    height: 43vh;
+    height: 260px;
     flex-grow: 1;
 }
 
@@ -154,7 +154,8 @@ footer {
     position:relative;
     background-color: rgb(34, 32, 32);
     z-index:2;
-    height: 15vh;
+    height: 90px;
+    overflow-y: hidden;
 }
 
 .social-link ul{
@@ -179,4 +180,4 @@ button{
     padding: 10px;
     border-color:rgb(2, 130, 250);
 
-}
+} 
