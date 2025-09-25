@@ -4,14 +4,13 @@ import comicsMerchandise from "/img/buy-comics-merchandise.png";
 import comicShopLocator from "/img/buy-comics-shop-locator.png";
 import comicsSubs from "/img/buy-comics-subscriptions.png";
 import powerVisa from "/img/buy-dc-power-visa.svg";
+import MyJumbo from "./MyJumbo";
+
 const MyMain = () => {
     return (
         <div className="main">
-            <div className="container">
-                <h2>{" --> Content goes here <-- "}</h2>
-            </div>
 
-
+        <MyJumbo />
             {/* container immagini e scritte bianche */}
             <div className="card-container">
                 <div className="card">
@@ -36,13 +35,13 @@ const MyMain = () => {
                 </div>
                 <div className="card">
                     <figure>
-                        <img src={comicShopLocator} alt="dc-digital-comics-logo" />
+                        <img src={comicShopLocator} alt="dc-comic-shop-locator" />
                     <figcaption>COMIC SHOP LOCATOR</figcaption>
                     </figure>
                 </div>
                 <div className="card">
                     <figure>
-                        <img src={powerVisa} alt="dc-digital-comics-logo" />
+                        <img src={powerVisa} alt="dc-power-visa"/>
                     <figcaption>DC POWER VISA</figcaption>
                     </figure>
                 </div>

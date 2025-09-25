@@ -1,13 +1,16 @@
 
+import Navbar from "./Navbar";
 
 const MyHeader = () => {
     return (
         <header>
             <div className="container">
                 <figure>
-                    <img src="/img/dc-logo.png" alt= "logo-dc" />
+                    <img src="/img/dc-logo.png" alt="logo-dc" />
                 </figure>
-                <nav className="navbar">
+                <Navbar />
+
+                {/* <nav className="navbar">
                     <div className="linkbox">
                         <ul>
                             <li>
@@ -42,7 +45,7 @@ const MyHeader = () => {
                             </li>
                         </ul>
                     </div>
-                </nav>
+                </nav> */}
             </div>
         </header>
     );

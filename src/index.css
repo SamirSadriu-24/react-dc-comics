@@ -66,16 +66,30 @@ a {
 
 /* MAIN */
 
+.jumbotron {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    overflow-y: hidden;
+}
 
-h2 {
-    font-size: 20px;
-    color: white;
-    font-weight: 700;
+.jumbotron-img {
+    top:-40px;
+    position: absolute;
+    object-position: center;
+    width: 100%;
+    height: 200%;
+    z-index: 2;
 }
 
 .card-container {
-    position:relative;
-    z-index:2;
+    position: relative;
+    z-index: 3;
     padding: 0 150px;
     height: 15vh;
     display: flex;
@@ -109,10 +123,15 @@ footer {
     height: 45vh;
     flex-grow: 1;
     background-size: cover;
+    z-index: 2;
+    display:flex;
+    flex-direction: column;
+    position: relative;
 }
 
 
 .link-container {
+    z-index: 2;
     padding: 0px 200px;
     display: flex;
     flex-direction: row;
@@ -130,54 +149,53 @@ footer {
 .link-container h4 {
     font-weight: 700;
     color: white;
-    font-size:12px;
+    font-size: 12px;
 }
 
-.link-container ul li a{
+.link-container ul li a {
     color: grey;
 }
 
-#logo-grande{
+#logo-grande {
+    position: absolute; 
+    bottom: -20px;        
+    left: 50%;            
     height: 400px;
-    z-index: 0;
-    position: absolute;
-    bottom: 5%;
-    left: 60%;
-    z-index: 0;
+    z-index: -1;          
 }
 
-.footer-container{
+
+.footer-container {
     display: flex;
 }
 
-.social .container{
-    position:relative;
+.social .container {
+    position: relative;
     background-color: rgb(34, 32, 32);
-    z-index:2;
+    z-index: 2;
     height: 90px;
-    overflow-y: hidden;
 }
 
-.social-link ul{
-    z-index:2;
+.social-link ul {
+    z-index: 2;
     color: white;
-    display:flex;
-    gap:10px;
+    display: flex;
+    gap: 10px;
 
 }
 
-.social-link ul h4{
-    color:rgb(2, 130, 250);
+.social-link ul h4 {
+    color: rgb(2, 130, 250);
 }
 
-.social-link ul img{
+.social-link ul img {
     height: 30px;
 }
 
-button{
-    background-color:transparent;
-    color:white;
+button {
+    background-color: transparent;
+    color: white;
     padding: 10px;
-    border-color:rgb(2, 130, 250);
+    border-color: rgb(2, 130, 250);
 
-} 
+}

@@ -1,0 +1,47 @@
+import digitalComicsImg from "/img/buy-comics-digital-comics.png";
+import comicsMerchandise from "/img/buy-comics-merchandise.png";
+import comicShopLocator from "/img/buy-comics-shop-locator.png";
+import comicsSubs from "/img/buy-comics-subscriptions.png";
+import powerVisa from "/img/buy-dc-power-visa.svg";
+
+const blueBanner = [
+    {
+        img: digitalComicsImg,
+        alt: "dc-digital-comics-logo",
+        text: "DIGITAL COMICS",
+    },
+    {
+        img: comicsMerchandise,
+        alt: "dc-comics-merchandise",
+        text: "DC MERCHANDISE",
+    },
+    {
+        img: comicsSubs,
+        alt: "dc-subscription",
+        text: "SUBSCRIPTION",
+    },
+    {
+        img: comicShopLocator,
+        alt: "dc-comic-shop-locator",
+        text: "COMIC SHOP LOCATOR",
+    },
+    {
+        img: powerVisa,
+        alt: "dc-power-visa",
+        text: "DC POWER",
+    },
+];
+
+
+
+
+const MyBlueBanner = () => {
+    return (
+        <div className="card-container">
+            <div className="card">
+                {blueBanner}
+
+            </div>
+        </div>
+    )
+}
